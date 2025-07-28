@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registerPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/Base.Theme.BottomNavigationPages"
+    tools:context="preparationPages.register">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/register_background"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/back_to_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        app:titleTextColor="@color/white"
+        app:title="Register"
+        app:navigationIcon="@mipmap/back"
+        app:titleMarginBottom="19dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_marginTop="175dp"
+        android:layout_height="1300dp"
+        android:background="@drawable/background_bottom"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="Register"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@color/theme0"
+        />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/text2_bg">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:src="@mipmap/user_icon"
+                android:layout_gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/user_name_text_register"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:hint="Please enter your USER NAME"
+                android:background="#00000000"
+                android:textSize="14sp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/text2_bg"
+            android:layout_marginTop="25dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:src="@mipmap/password_icon"
+                android:layout_gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/password_text_register"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:hint="Please enter your PASSWORD"
+                android:textSize="14sp"
+                android:background="#00000000"
+                android:inputType="textPassword"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/text2_bg"
+            android:layout_marginTop="25dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:src="@mipmap/confirm_password"
+                android:layout_gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/confirm_password_register"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:hint="Please Confirm your password"
+                android:textSize="14sp"
+                android:background="#00000000"
+                android:inputType="textPassword"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/text2_bg"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:src="@mipmap/change_role"
+                android:layout_gravity="center_vertical"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/role_selector"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="-1dp"
+                android:textSize="14sp"
+                android:background="@drawable/spinner_list"
+                android:entries="@array/role"
+                android:popupBackground="@drawable/text3_bg"
+                android:defaultFocusHighlightEnabled="true"
+                android:dropDownSelector="@drawable/role_choice"
+                style="@style/dropdown_style"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <Button
+            android:id="@+id/bt_register"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="Register"
+            android:textSize="20dp"
+            android:layout_margin="50dp"
+            android:gravity="center"
+            android:backgroundTint="@color/theme3"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

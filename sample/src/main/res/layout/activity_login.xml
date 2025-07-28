@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="preparationPages.login"
+    android:theme="@style/Base.Theme.BottomNavigationPages">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/login_background"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        android:layout_marginTop="365dp"
+        android:background="@drawable/background_bottom"
+        android:scaleType="center"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/app_icon"/>
+
+    <RelativeLayout
+        android:id="@+id/login_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/icon"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:src="@mipmap/app_icon"-->
+        <!--            android:layout_centerHorizontal="true"/>-->
+
+        <include
+            android:id="@+id/input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+            layout="@layout/input_layout"/>
+
+        <include
+            android:id="@+id/layout_progress"
+            android:layout_width="match_parent"
+            android:layout_height="130dip"
+            layout="@layout/layout_progress"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/main_btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/text_bg"
+            android:gravity="center"
+            android:paddingBottom="15dip"
+            android:paddingLeft="60dip"
+            android:paddingRight="60dip"
+            android:paddingTop="10dip"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/hint_for_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_relative_layout"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:text="No account?   Register now!"
+        android:textColor="@color/theme1" />
+
+</RelativeLayout>

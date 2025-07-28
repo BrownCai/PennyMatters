@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemDetail">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/drawer_header_background"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/back_to_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        app:titleTextColor="@color/white"
+        app:title="Details"
+        app:navigationIcon="@mipmap/back"
+        app:titleMarginBottom="19dp"/>
+
+    <ImageView
+        android:id="@+id/bottom_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/detail_page_bg"
+        android:layout_marginTop="160dp"/>
+
+    <TextView
+        android:id="@+id/name_detail_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/back_to_search"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="30sp"/>
+
+    <LinearLayout
+        android:id="@+id/price_liner"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@id/bottom_bg"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:src="@mipmap/price"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unit Price: "
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/theme0"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/price_detail_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/theme0"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/shop_liner"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/price_liner"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:src="@mipmap/provider"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shop: "
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/theme0"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/shop_detail_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/theme0"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/shop_liner"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:src="@mipmap/label"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description: "
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/theme0"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/description_detail_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/theme0"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@id/bottom_bg"
+        android:layout_alignStart="@id/bottom_bg"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="25dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/date"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Updated time: "
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/grey"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/date_detail_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/grey"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10sp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

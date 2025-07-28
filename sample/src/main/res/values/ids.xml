@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="bottomNavigation" type="id" />
+    <item name="content" type="id" />
+    <item name="record_toolbar" type="id" />
+    <item name="recyclerview_record_page" type="id" />
+    <item name="bottom_adding_toolbar" type="id" />
+    <item name="item_et_bg" type="id" />
+    <item name="price_et_bg" type="id" />
+    <item name="item_et" type="id" />
+    <item name="price_et" type="id" />
+
+</resources>

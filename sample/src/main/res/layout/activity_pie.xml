@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/analysis_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@mipmap/top_background"
+            app:title="@string/analysis_button"
+            app:titleTextAppearance="@style/toolbarTextStyle"
+            app:titleTextColor="@color/white"/>
+
+        <ImageView
+            android:layout_below="@id/analysis_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/analysis_background"
+            android:scaleType="centerCrop"/>
+
+
+        <LinearLayout
+            android:layout_below="@id/analysis_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.anychart.AnyChartView
+                android:id="@+id/line_chart_view"
+                android:layout_width="match_parent"
+                android:layout_height="385dp">
+
+            </com.anychart.AnyChartView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                app:layout_constraintStart_toEndOf="@+id/line_chart_view"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_height="0dp">
+
+
+                <com.anychart.AnyChartView
+                    android:id="@+id/any_chart_view"
+                    android:layout_width="179dp"
+                    android:layout_height="match_parent" />
+
+                <com.anychart.AnyChartView
+                    android:id="@+id/bar_chart_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/any_chart_view" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

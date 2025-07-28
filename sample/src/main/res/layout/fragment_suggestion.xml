@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true"
+    tools:context=".bottomNavigationUi.suggestionFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/suggestion_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@mipmap/top_background"
+        app:title="@string/suggestion_button"
+        app:titleTextColor="@color/white"
+        app:titleTextAppearance="@style/toolbarTextStyle" />
+
+
+    <ImageView
+        android:layout_below="@id/suggestion_toolbar"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/suggestion_background"
+        android:scaleType="fitCenter"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/suggestion_toolbar"
+        android:layout_alignBottom="@id/suggestion_toolbar"
+        android:text="Search &amp; Compare"
+        android:textColor="@color/white"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="15sp"
+        android:textStyle="italic"/>
+
+    <RelativeLayout
+        android:id="@+id/search_bar"
+        android:layout_below="@id/suggestion_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@drawable/text2_bg"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/search_bt"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/search_keys"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/search_bt"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="16sp"
+            android:background="@color/transparent"
+            android:hint="Search for item you want to compare"/>
+
+        <ImageButton
+            android:id="@+id/search_bt"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:scaleType="centerCrop"
+            android:background="@color/transparent"
+            android:src="@mipmap/search_icon"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_bar"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="5dp"/>
+
+</RelativeLayout>
