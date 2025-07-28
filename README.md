@@ -22,11 +22,19 @@ The app may also provide suggestions if user wants to buy some good, by entering
 ### 2.1. Welcome & Signing in & Register
 
 
+https://github.com/user-attachments/assets/74bcb2e0-0d79-4927-92e1-d148f729a391
+
+
+
 - Database connection and queries
 - Page switching and scrolling
 - Input box and button control 
 
 ### 2.2. Data visualization
+
+
+https://github.com/user-attachments/assets/49af9a06-41ee-4f25-be17-3cb93e93a7a4
+
 
 
 - Data visualization
@@ -38,6 +46,10 @@ The app may also provide suggestions if user wants to buy some good, by entering
 ### 2.3. Simple record
 
 
+https://github.com/user-attachments/assets/9ff16966-88cc-4764-8ee1-403663e7e6a3
+
+
+
 - Better response and intelligent suggestion generation of digital assistant
 - Better OCR recognition effect
 - Changing different themes
@@ -47,7 +59,15 @@ The app may also provide suggestions if user wants to buy some good, by entering
 
 
 
+https://github.com/user-attachments/assets/b961ac0b-2663-4004-86ff-9a53e4e2a0f5
+
+
+
 ### 2.5. Ticket OCR & Result check
+
+
+
+https://github.com/user-attachments/assets/b2558dc6-779a-4499-8e1e-33b8cbe6a228
 
 
 
@@ -55,5 +75,13 @@ The app may also provide suggestions if user wants to buy some good, by entering
 
 
 
+https://github.com/user-attachments/assets/e60cbec8-24dc-46ea-a375-403f3166888a
+
+
+
 ### 2.7. Local history keep/clear & Logout
+
+
+
+https://github.com/user-attachments/assets/dafcd1a2-db20-492c-94fb-22a1ec7ab391
 
