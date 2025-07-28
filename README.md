@@ -1,9 +1,10 @@
-# PennyMatters: Digital Financial Recording Assistant #
+# PennyMatters: Digital Financial Recording Assistant
 
-Proposal of Android Application Project   
---Xinghao Cai   --Zhihao Zhou
+**Device must be connected to KU Leuven network to use this application, as the database resides on an internal server.​​**
 
-## 1. Brief description of functions ##
+---
+
+## 1. Brief description of functions
 
 The target users of our application are people who want to take record of every detailed expenditure in their lives.
 
@@ -13,26 +14,46 @@ The “financial assistant” will give analysis, like reminding them of how muc
 
 The app may also provide suggestions if user wants to buy some good, by entering the name of them and the app will give information of price of these good and the location of nearby shops in a list.
 
-## 2. Feature list ## 
+---
 
-### 2.1. Essential ###
+
+## 2. Feature Display 
+
+### 2.1. Welcome & Signing in & Register
+
+
 - Database connection and queries
 - Page switching and scrolling
 - Input box and button control 
 
-### 2.2. Required ###
+### 2.2. Data visualization
+
+
 - Data visualization
 - Mobile phone resources invocation (e.g. gallery)
 - Optical Character Recognition (OCR) and formatting
 - Basic suggestions about existed data
 - Beautiful theme 
 
-### 2.3. Optional ###
+### 2.3. Simple record
+
+
 - Better response and intelligent suggestion generation of digital assistant
 - Better OCR recognition effect
 - Changing different themes
 - More data analysis methods 
 
-## 3. Probable wireframes ##
+### 2.4. Search & Price comparation
 
-![](Proposal.001.png)
+
+
+### 2.5. Ticket OCR & Result check
+
+
+
+### 2.6. Fingerprint quick login
+
+
+
+### 2.7. Local history keep/clear & Logout
+
